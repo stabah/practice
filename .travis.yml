@@ -4,6 +4,6 @@ python:
 install:
   - pip install pep8 --use-mirrors
 before_script:
-  - "pep8 --exclude=migrations --ignore=E501,E225 src"
+  - "pep8 --exclude=migrations --ignore=E501,E225 ./"
 script:
   - python test.py

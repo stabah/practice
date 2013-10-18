@@ -2,8 +2,7 @@ nguage: python
 python:
   - "2.7"
 install:
-  - pip install -q -e . --use-mirrors
-  - pep8 --use-mirrors
+  - pip install pep8 --use-mirrors
 before_script:
   - "pep8 --exclude=migrations --ignore=E501,E225 src"
 script:
